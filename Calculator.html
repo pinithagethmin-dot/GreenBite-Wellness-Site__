@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    
+
+    <!-- pwa script-->
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name ="apple-mobile-web-app-title" content="Greenbite"/>
+    <link rel="manifest" href="./site.webmanifest" />
+
+
+
+</head>
+
+<body>
+
+     <header>
+        <!--add the logo-->
+        <a class="logo" href="./index.html">
+        <img src="./assests/imgs/logo.png" alt="GreenBite — Healthy Living" />
+        </a>
+
+
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+
+        <!-- Navigation Menu -->
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="./index.html">Home</a>
+            <a href="./Recipes.html">Healthy Recipes</a>
+            <a href="./Calculator.html">Calories & Nutrition</a>
+            <a href="./Workouts.html">Workout Generator</a>
+            <a href="./Mindfulness.html">Mindfulness</a>
+            <a href="./Contact.html">Contact</a>
+        </nav>
+        
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./Recipes.html">Recipes</a>
+            <a href="./Calculator.html">Calculator</a>
+            <a href="./Workouts.html">Workouts</a>
+            <a href="./Mindfulness.html">Mindfulness</a>
+            <a href="./Contact.html">Contact</a>    
+        </nav>
+
+
+    </header>
+
+
+    
+
+  <div class="calorie-calculator">
+        <main class="section">
+            <h1>Calorie & Nutrition Calculator</h1>
+  
+                <form id="calcForm" class="calc-grid">
+                    <label>
+                        Age (years)<input type="number" id="age" min="10" max="100" required>
+                    </label>
+                
+                    <label>
+                        Gender
+                        <select id="gender" required>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </label>
+    
+                    <label>
+                        Height (cm)<input type="number" id="height" min="120" max="230" required>
+                    </label>
+
+                    <label>
+                        Weight (kg)<input type="number" id="weight" min="30" max="250" required>
+                    </label>
+
+                    <label>
+                        Activity Level
+                        <select id="activity" required>
+                            <option value="1.2">Sedentary (little or no exercise)</option>
+                            <option value="1.375">Lightly active (1–3 days/week)</option>
+                            <option value="1.55">Moderately active (3–5 days/week)</option>
+                            <option value="1.725">Very active (6–7 days/week)</option>
+                            <option value="1.9">Super active (hard exercise/physical job)</option>
+                        </select>
+                    </label>
+
+                    <button class="btn" type="submit">Calculate</button>
+
+                </form>
+
+
+            <section id="results" class="results hidden" aria-live="polite">
+                <div class="stat">
+                    <h3>BMR</h3>
+                    <p><span id="bmr">0</span> kcal/day</p>
+                </div>
+
+                <div class="stat">
+                    <h3>TDEE</h3>
+                    <p><span id="tdee">0</span> kcal/day</p>
+                </div>
+
+                <div class="macros">
+                    <h3>Macronutrients</h3>
+
+                    <div class="progress">
+                        <span id="carbBar" style="width:0%"></span>
+                    </div>
+
+                    <div class="progress">
+                        <span id="proteinBar" style="width:0%"></span>
+                    </div>
+
+                <div class="progress">
+                    <span id="fatBar" style="width:0%"></span>
+                </div>
+
+                <ul class="macro-list">
+                    <li>Carbs: <strong id="carbG">0</strong> g</li>
+                    <li>Protein: <strong id="proteinG">0</strong> g</li>
+                    <li>Fat: <strong id="fatG">0</strong> g</li>
+                </ul>
+                
+            </section>
+        </main>
+  </div>
+
+
+<br>
+<br>
+
+
+
+    <div class="container">
+        <h1>General Nutrition & Wellness Tips</h1>
+        <br>
+
+        <!--Recipes Cards-->
+        <div class ="card-container">
+
+            <!--Card 1-->
+            <div class="card">
+
+                <div class="card-image oatmeal">
+                    <img src="./assests/imgs/1.calculate page.webp" alt="1">
+
+                    <div class="card-content">
+                        <h2>Eat a Balanced Plate</h2>
+                        <p>Try to include protein, healthy fats, complex carbs, and vegetables in every meal.</p>
+                    </div> 
+
+                </div>
+            </div>
+
+
+            <!--Card 2-->
+            <div class="card">
+
+                <div class="card-image oatmeal">
+                    <img src="./assests/imgs/2.calculater.png" alt="2">
+
+                    <div class="card-content">
+                        <h2>Stay Hydrated</h2>
+                        <p>Drink at least 7–8 glasses of water daily. Sometimes thirst feels like hunger.</p>
+                    </div> 
+
+                </div>
+            </div>
+
+
+            <!--Card 3-->
+            <div class="card">
+
+                <div class="card-image oatmeal">
+                    <img src="./assests/imgs/3. caluculator new.png" alt="3">
+
+                    <div class="card-content">
+                        <h2>Move Daily</h2>
+                        <p>Even light exercise, like walking or stretching, supports calorie balance and overall wellness.</p>
+                    </div> 
+
+                </div>
+            </div>
+
+
+            <!--Card 4-->
+            <div class="card">
+
+                <div class="card-image oatmeal">
+                    <img src="./assests/imgs/5. calculate.jpeg" alt="4">
+
+                    <div class="card-content">
+                        <h2>Rest & Manage Stress</h2>
+                        <p>Good sleep and stress management are as important as diet for overall health.</p>
+                    </div> 
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+<br>
+<br>
+
+        <video width="1510" autoplay muted loop>
+            <source src="./assests/videos/claculater vedio.mp4" type="video/mp4">
+        </video>
+
+
+
+<footer class="site-footer">
+
+    
+  <div class="footer-grid">
+    
+    <!-- Column 1: About -->
+    <div class="footer-about">
+      <h4>About GreenBite</h4>
+      <p>Balanced meals, movement, and mindfulness — small habits, big results.</p>
+    </div>
+
+    <!-- Column 2: Newsletter -->
+    <form id="newsletterForm" class="newsletter" aria-label="Newsletter signup">
+      <h4>Join our newsletter</h4>
+      <div class="row">
+        <input type="email" id="newsletterEmail" placeholder="you@email.com" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </div>
+      <small id="newsletterMsg" role="status" aria-live="polite"></small>
+    </form>
+
+    <!-- Column 3: Quick Links -->
+    <div class="footer-links-section">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#top" class="scroll-top">Back to top</a></li>
+        <li><a href="contact.html#faq">FAQ</a></li>
+        <li><a href="recipes.html#saved">Saved Recipes</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <p class="copy">© <span id="year"></span> GreenBite</p>
+</footer>
+
+
+
+
+<script src="./footer.js"></script>
+<script src="./calculator.js"></script> 
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    

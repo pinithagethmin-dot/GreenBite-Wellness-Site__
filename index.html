@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    
+
+    <!-- pwa script-->
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name ="apple-mobile-web-app-title" content="Greenbite"/>
+    <link rel="manifest" href="./site.webmanifest" />
+
+
+
+</head>
+
+<body>
+
+     <header>
+        <!--add the logo-->
+        <a class="logo" href="./index.html">
+        <img src="./assests/imgs/logo.png" alt="GreenBite — Healthy Living" />
+        </a>
+
+
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+
+        <!-- Navigation Menu -->
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="./index.html">Home</a>
+            <a href="./Recipes.html">Healthy Recipes</a>
+            <a href="./Calculator.html">Calories & Nutrition</a>
+            <a href="./Workouts.html">Workout Generator</a>
+            <a href="./Mindfulness.html">Mindfulness</a>
+            <a href="./Contact.html">Contact</a>
+        </nav>
+        
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./Recipes.html">Recipes</a>
+            <a href="./Calculator.html">Calculator</a>
+            <a href="./Workouts.html">Workouts</a>
+            <a href="./Mindfulness.html">Mindfulness</a>
+            <a href="./Contact.html">Contact</a>    
+        </nav>
+
+
+    </header>
+
+
+
+    <section class="hero" style="--bg:url('./assests/imgs/111.png')">
+
+        <div class="hero-inner">
+          <h1>Welcome to <span class="brand">GreenBite.</span></h1>
+          <h1> Your companion in simple, healthy living</h1>
+          <p id="slogan" class="slogan" aria-live="polite">Eat green. Live clean. </p>
+          <a class="btn btn-lg" href="recipes.html">Explore Recipes</a>
+        </div>
+
+    </section>
+
+
+
+    <video width="1679" autoplay muted loop>
+        <source src="./assests/videos/exercise 1-vmake.mp4" type="video/mp4">
+    </video>
+
+    <br>
+    <br>
+
+        <article id="article1" class="article1">
+            <h2>Health Tip of the Day</h2>
+            <p>Start your day with a glass of water.</p>
+        </article>
+
+
+
+  <main>
+    <!-- Box 1: Balanced Meals -->
+    <article id="article1.1" onclick="navigateTo('Recipes.html')">
+      <h2>Balanced Meals</h2>
+      <p>Discover easy, delicious recipes with full nutrition info.</p>
+    </article>
+
+    <!-- Box 2: Know Your Numbers -->
+    <article id="article1.2" onclick="navigateTo('Calculator.html')">
+      <h2>Know Your Numbers</h2>
+      <p>Calculate your daily calorie needs and macro targets.</p>
+    </article>
+
+    <!-- Box 3: Move Your Body -->
+    <article id="article1.3" onclick="navigateTo('Workouts.html')">
+      <h2>Move Your Body</h2>
+      <p>Get a randomized workout tailored to your goals.</p>
+    </article>
+
+    <!-- Box 4: Calm Your Mind -->
+    <article id="article1.4" onclick="navigateTo('Mindfulness.html')">
+      <h2>Calm Your Mind</h2>
+      <p>Breathe, focus, and track completed sessions.</p>
+    </article>
+  </main>
+    
+
+
+
+<footer class="site-footer">
+
+    
+  <div class="footer-grid">
+    
+    <!-- Column 1: About -->
+    <div class="footer-about">
+      <h4>About GreenBite</h4>
+      <p>Balanced meals, movement, and mindfulness — small habits, big results.</p>
+    </div>
+
+    <!-- Column 2: Newsletter -->
+    <form id="newsletterForm" class="newsletter" aria-label="Newsletter signup">
+      <h4>Join our newsletter</h4>
+      <div class="row">
+        <input type="email" id="newsletterEmail" placeholder="you@email.com" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </div>
+      <small id="newsletterMsg" role="status" aria-live="polite"></small>
+    </form>
+
+    <!-- Column 3: Quick Links -->
+    <div class="footer-links-section">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#top" class="scroll-top">Back to top</a></li>
+        <li><a href="contact.html#faq">FAQ</a></li>
+        <li><a href="recipes.html#saved">Saved Recipes</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <p class="copy">© <span id="year"></span> GreenBite</p>
+</footer>
+
+
+
+
+<script src="./footer.js"></script>
+<script src="./home.js"></script> 
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+</body>
+</html>

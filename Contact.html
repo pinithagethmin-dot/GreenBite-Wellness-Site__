@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    
+
+    <!-- pwa script-->
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name ="apple-mobile-web-app-title" content="Greenbite"/>
+    <link rel="manifest" href="./site.webmanifest" />
+
+
+
+</head>
+
+<body>
+
+     <header>
+        <!--add the logo-->
+        <a class="logo" href="./index.html">
+        <img src="./assests/imgs/logo.png" alt="GreenBite — Healthy Living" />
+        </a>
+
+
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+
+        <!-- Navigation Menu -->
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="./index.html">Home</a>
+            <a href="./Recipes.html">Healthy Recipes</a>
+            <a href="./Calculator.html">Calories & Nutrition</a>
+            <a href="./Workouts.html">Workout Generator</a>
+            <a href="./Mindfulness.html">Mindfulness</a>
+            <a href="./Contact.html">Contact</a>
+        </nav>
+        
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./Recipes.html">Recipes</a>
+            <a href="./Calculator.html">Calculator</a>
+            <a href="./Workouts.html">Workouts</a>
+            <a href="./Mindfulness.html">Mindfulness</a>
+            <a href="./Contact.html">Contact</a>    
+        </nav>
+
+
+    </header>
+
+
+
+    <section class="contact-section">
+  <div class="contact-form">
+    <h3>Contact & Feedback</h3>
+       <form id="feedbackForm" class="contact-form">
+        <input id="name" type="text" placeholder="Name" required>
+        <input id="email" type="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <small id="formMsg" role="status" aria-live="polite"></small>
+  </div>
+
+        <div class="map-section">
+            <br><br>
+            <h3>Find Us</h3>
+            <iframe src="https://www.google.com/maps?q=542 Peradeniya Rd, Kandy 20000, Sri Lanka%20Sri%20Lanka&output=embed" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="faq-section faq">
+            <br><br>
+            <h2>FAQ</h2>
+            <button class="acc">What is GreenBite?</button>
+            <div class="panel">GreenBite is a mindful eating app that helps you track and save recipes.</div>
+            <button class="acc">Is it free?</button>
+            <div class="panel">Yes, GreenBite is completely free to use.</div>
+            <button class="acc">Can I save recipes?</button>
+            <div class="panel">Use the Save button in each recipe modal. They appear under “Saved Recipes”.</div>
+        </div>
+    </section>
+
+    
+<footer class="site-footer">
+
+    
+  <div class="footer-grid">
+    
+    <!-- Column 1: About -->
+    <div class="footer-about">
+      <h4>About GreenBite</h4>
+      <p>Balanced meals, movement, and mindfulness — small habits, big results.</p>
+    </div>
+
+    <!-- Column 2: Newsletter -->
+    <form id="newsletterForm" class="newsletter" aria-label="Newsletter signup">
+      <h4>Join our newsletter</h4>
+      <div class="row">
+        <input type="email" id="newsletterEmail" placeholder="you@email.com" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </div>
+      <small id="newsletterMsg" role="status" aria-live="polite"></small>
+    </form>
+
+    <!-- Column 3: Quick Links -->
+    <div class="footer-links-section">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#top" class="scroll-top">Back to top</a></li>
+        <li><a href="contact.html#faq">FAQ</a></li>
+        <li><a href="recipes.html#saved">Saved Recipes</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <p class="copy">© <span id="year"></span> GreenBite</p>
+</footer>
+
+
+
+
+<script src="./footer.js"></script>
+<script src="./contact.js"></script> 
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+</body>
+</html>

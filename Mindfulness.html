@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    
+
+    <!-- pwa script-->
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name ="apple-mobile-web-app-title" content="Greenbite"/>
+    <link rel="manifest" href="./site.webmanifest" />
+
+
+
+</head>
+
+<body>
+
+     <header>
+        <!--add the logo-->
+        <a class="logo" href="./index.html">
+        <img src="./assests/imgs/logo.png" alt="GreenBite — Healthy Living" />
+        </a>
+
+
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+
+        <!-- Navigation Menu -->
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="./index.html">Home</a>
+            <a href="./Recipes.html">Healthy Recipes</a>
+            <a href="./Calculator.html">Calories & Nutrition</a>
+            <a href="./Workouts.html">Workout Generator</a>
+            <a href="./Mindfulness.html">Mindfulness</a>
+            <a href="./Contact.html">Contact</a>
+        </nav>
+        
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./Recipes.html">Recipes</a>
+            <a href="./Calculator.html">Calculator</a>
+            <a href="./Workouts.html">Workouts</a>
+            <a href="./Mindfulness.html">Mindfulness</a>
+            <a href="./Contact.html">Contact</a>    
+        </nav>
+
+
+    </header>
+
+
+
+
+
+    <main class="mindfulness-page">
+        <section class="mindfulness-card">
+            <h1>Mindfulness</h1>
+  
+            <section class="breath">
+                <div class="breath-circle" id="breathCircle" aria-label="Breathing animation" aria-live="polite">Inhale</div>
+                <div class="row gap">
+                    <button class="btn" id="startBreath">Start</button>
+                    <button class="btn" id="stopBreath">Stop</button>
+                </div>
+            </section>
+
+            <section class="meditation">
+                <h2>Meditation Timer</h2>
+                <label>Minutes <input type="number" id="medMin" min="1" value="5"></label>
+                    <div class="row gap">
+                        <button class="btn" id="startMed">Start</button>
+                        <button class="btn" id="pauseMed">Pause</button>
+                        <button class="btn" id="resetMed">Reset</button>
+                    </div>
+                    <div class="count big" id="medCount">05:00</div>
+                    <p><strong>Completed sessions:</strong> <span id="doneSessions">0</span></p>
+            </section>
+
+            <section class="sounds">
+                <h2>Ambient Sounds</h2>
+                    <div class="row gap">
+                        <button class="btn" data-sound="rain">Rain</button>
+                        <button class="btn" data-sound="waves">Waves</button>
+                        <button class="btn" data-sound="forest">Forest</button>
+                        <button class="btn" id="stopSound">Stop</button>
+                    </div>
+            </section>
+        </section>
+    </main>
+
+
+
+    <div class="mindfulness-section">
+        <h1>Everyday Mindfulness Practices</h1>
+    </div>
+
+
+    <div class="container">
+
+
+        <!--Recipes Cards-->
+        <div class ="card-container">
+
+            <!--Card 1-->
+            <div class="card">
+
+                <div class="card-image oatmeal">
+                    <img src="./assests/imgs/Start with the breath.jpg" alt="1">
+
+                    <div class="card-content">
+                        <h2>Start with the breath</h2>
+                        <p>Take a few slow, deep breaths when you wake up, before meals, or when stressed.</p>
+                        <p>Notice the air moving in and out without trying to change it.</p>
+                    </div> 
+
+                </div>
+            </div>
+
+
+            <!--Card 2-->
+            <div class="card">
+
+                <div class="card-image oatmeal">
+                    <img src="./assests/imgs/Mindful moments.webp" alt="2">
+
+                    <div class="card-content">
+                        <h2>Mindful moments</h2>
+                        <p>Choose small daily activities (brushing teeth, drinking tea, washing hands) and do them slowly with full attention.</p>
+                        <p>Notice the sounds, textures, tastes, and sensations.</p>
+                    </div> 
+
+                </div>
+            </div>
+
+
+            <!--Card 3-->
+            <div class="card">
+
+                <div class="card-image oatmeal">
+                    <img src="./assests/imgs/Body scan.jpg" alt="3">
+
+                    <div class="card-content">
+                        <h2>Body scan</h2>
+                        <p>Close your eyes and slowly move your attention from head to toe.</p>
+                        <p>Notice areas of tension without judgment—just observe and gently relax.</p>
+                    </div> 
+
+                </div>
+            </div>
+
+
+            <!--Card 4-->
+            <div class="card">
+
+                <div class="card-image oatmeal">
+                    <img src="./assests/imgs/Mindful walking.jpg" alt="4">
+
+                    <div class="card-content">
+                        <h2>Mindful walking</h2>
+                        <p>Walk slowly, paying attention to how your feet touch the ground.</p>
+                        <p>Notice your surroundings instead of rushing or thinking ahead.</p>
+                    </div> 
+
+                </div>
+            </div>
+
+                        <!--Card 5-->
+            <div class="card">
+
+                <div class="card-image oatmeal">
+                    <img src="./assests/imgs/Gratitude pause.png" alt="5">
+
+                    <div class="card-content">
+                        <h2>Gratitude pause</h2>
+                        <p>Each night, name one or two things you’re grateful for.</p>
+                        <p>This trains your mind to notice positives instead of only stress.</p>
+                    </div> 
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    
+
+<footer class="site-footer">
+
+    
+  <div class="footer-grid">
+    
+    <!-- Column 1: About -->
+    <div class="footer-about">
+      <h4>About GreenBite</h4>
+      <p>Balanced meals, movement, and mindfulness — small habits, big results.</p>
+    </div>
+
+    <!-- Column 2: Newsletter -->
+    <form id="newsletterForm" class="newsletter" aria-label="Newsletter signup">
+      <h4>Join our newsletter</h4>
+      <div class="row">
+        <input type="email" id="newsletterEmail" placeholder="you@email.com" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </div>
+      <small id="newsletterMsg" role="status" aria-live="polite"></small>
+    </form>
+
+    <!-- Column 3: Quick Links -->
+    <div class="footer-links-section">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#top" class="scroll-top">Back to top</a></li>
+        <li><a href="contact.html#faq">FAQ</a></li>
+        <li><a href="recipes.html#saved">Saved Recipes</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <p class="copy">© <span id="year"></span> GreenBite</p>
+</footer>
+
+
+
+
+<script src="./footer.js"></script>
+<script src="./mindfulness.js"></script> 
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    
+</body>
+</html>
